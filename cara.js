@@ -14,7 +14,7 @@ function setup() {
 function draw() {
   var boca_w = width/1.2;
   micLevel = mic.getLevel();
-    mov= map(micLevel, 0, 1, 10, 500);
+    mov= map(micLevel, 0, 1, 10, 100);
   
   noStroke();
   push();
@@ -69,9 +69,9 @@ background(0);
   //ull esquerre
  
   fill(255);
-  ellipse( width*0.30+mov, height/2.5,60+mov);
+  ellipse( width*0.30, height/2.5,60+mov);
   fill('red');
-  ellipse(width*0.30+mov, height/2.5,10+mov);
+  ellipse(width*0.30, height/2.5,10+mov);
   
   //ull dret
   fill(255);
